@@ -1,7 +1,29 @@
 
 /*==================STYLING FOR DESKTOP MENU ============================*/
-.show-nav {
-  display:block;
+/*================== HEADER STYLES ============================*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  border-bottom: 1px solid gray;
+}
+
+header .nav-container {
+
+  background-color: var(--soft-white);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--medium-spacing);
+}
+
+header .nav-container .logo {
+  text-decoration: none;
+  color: var(--mid-dark);
+  font-weight: 800;
 }
 
 nav {
@@ -34,8 +56,6 @@ nav {
       display: none;
     }
   }
-  
-
   
   nav .nav-toggle span {
     display: block;
