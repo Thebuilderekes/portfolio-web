@@ -1,0 +1,188 @@
+
+/*==================STYLING FOR DESKTOP MENU ============================*/
+.show-nav {
+  display:block;
+}
+
+nav {
+    display: flex;
+  }
+  
+  nav .nav-toggle {
+   
+    border: none;
+    background-color: transparent;
+    width: 60px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  @media(min-width:600px ){
+
+    nav .nav-toggle {
+      display: none;
+    }
+  }
+  
+
+  
+  nav .nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 60%;
+    background: var(--mid-dark);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  
+  nav .nav-toggle span:nth-child(1) {
+    top: 0px;
+  }
+  
+  nav .nav-toggle span:nth-child(2) {
+    top: 10px;
+  }
+  
+  nav .nav-toggle span:nth-child(3) {
+    top: 20px;
+  }
+  
+  nav .nav-toggle.open span:nth-child(1) {
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  nav .nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  nav .nav-toggle.open span:nth-child(3) {
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  nav #desktop-menu-list {
+    display: flex;
+  }
+
+  nav #desktop-menu-list{
+    display: none;
+  }
+
+  @media(min-width:600px ){
+
+    nav #desktop-menu-list{
+      display: flex;
+    }
+  }  
+
+
+  nav #desktop-menu-list li {
+    padding: 0 var(--small-spacing);
+    list-style: none;
+  }
+  
+  nav #desktop-menu-list li a {
+    text-decoration: none;
+    font-size: var(--mobile-fs);
+    color: var(--mid-dark);
+  }
+  
+  /*==================STYLING FOR MOBILE MENU MENU ============================*/
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  
+  
+    nav .mobile-menu-list {
+      position: fixed;
+      display: none;
+      padding: var(--medium-spacing);
+      background-color: rgb(202, 202, 202);
+      transition: background-color 0.55s ease;
+      animation: ease-in-out;
+      animation-duration: 5s;
+      width: 100%;
+    }
+    nav .mobile-menu-list.toggle-visibility {
+      background-color: var(--soft-white);
+      display: block;
+      animation: fadeIn 1s ease;
+    }
+  
+  
+    nav .mobile-menu-list li {
+        
+      margin: 20px 0;
+      opacity: 0;
+    animation: fade-in-left 0.2s ease-in-out forwards;
+  
+    }
+    nav .mobile-menu-list li:nth-child(1){
+      animation-delay: 0.25s;
+    }
+    nav .mobile-menu-list li:nth-child(2){
+      animation-delay: 0.35s; 
+    }
+    nav .mobile-menu-list li:nth-child(3){
+      animation-delay: 0.45s;
+    }
+    nav .mobile-menu-list li:nth-child(4){
+      animation-delay: 0.55s;
+    }
+  
+    
+  
+    nav .mobile-menu-list li a {
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--mid-dark);
+    }
+  

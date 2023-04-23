@@ -1,0 +1,53 @@
+
+/*==================STYLING FOR PORTFOLIO SECTION ============================*/
+
+
+
+.portfolio-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  
+  .portfolio-section .case-study, .case-study-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-spacing);
+   
+  }
+  
+  
+  .portfolio-section .case-study {
+    margin: var(--large-spacing) 0;
+  }
+  
+  .portfolio-section .case-study .case-study-desc {
+    width: 80%;
+  }
+  
+  @media (min-width:600px){
+    .portfolio-section .case-study {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+     background-color: aqua;
+    }
+  
+    .portfolio-section .case-study .case-study-desc {
+     width: 40%;
+    }
+  }
+  
+  
+  .portfolio-section .case-study .case-study-desc a {
+    text-decoration: none;
+  }
+  
+  .portfolio-section .case-study .case-study-desc p {
+    text-align: center;
+  }
+  
