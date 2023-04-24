@@ -1,8 +1,8 @@
  /*==================STYLING FOR  HERO SECTION============================*/
  .hero-section{
-    
     padding: var(--medium-spacing);
     background-color: var(--soft-white);
+    border: 1px solid gray;
     margin: var(--extra-large-spacing) var(--medium-spacing);
   }
 
@@ -36,7 +36,7 @@
    }
     
    .hero-section p {
-    font-size: var(--small-fs);
+    font-size: var(--medium-fs);
    }
 
    /*==================Technologies ============================*/
@@ -57,7 +57,7 @@
 
    .hero-section .technologies ul li {
     font-size: var(--mobile-fs);
-    border: 1px solid var(--mid-dark);
+    border: 1px solid var(--mid-black);
     padding: var(--small-spacing) var(--medium-spacing);
   }
   
@@ -82,8 +82,8 @@
 
    .hero-section .work-cv-links .work{
       color: var(--soft-white);
-      background-color: var(--mid-dark);
-      border: 1px solid var(--mid-dark);
+      background-color: var(--mid-black);
+      border: 1px solid var(--mid-black);
       padding: var(--medium-spacing) var(--medium-spacing);
       margin-right: var(--medium-spacing);
       transition: 1s all;
@@ -92,13 +92,13 @@
 
    .hero-section .work-cv-links .work:hover {
     background-color: var(--soft-white);
-    color: var(--mid-dark);
+    color: var(--mid-black);
    }
 
 .hero-section .work-cv-links .download-cv{
    background-color: var(--soft-white);
-   color: var(--mid-dark);
-   border: 1px solid var(--mid-dark);
+   color: var(--mid-black);
+   border: 1px solid var(--mid-black);
    padding: var(--medium-spacing) var(--medium-spacing);
    margin-right: var(--medium-spacing);
    transition: 1s all;
@@ -106,7 +106,7 @@
 }
 
 .hero-section .work-cv-links .download-cv:hover {
- background-color:var(--mid-dark);;
+ background-color:var(--mid-black);;
  color: var(--soft-white);
 }
 

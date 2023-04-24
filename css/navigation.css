@@ -22,12 +22,13 @@ header .nav-container {
 
 header .nav-container .logo {
   text-decoration: none;
-  color: var(--mid-dark);
+  color: var(--mid-black);
   font-weight: 800;
 }
 
 nav {
     display: flex;
+  
   }
   
   nav .nav-toggle {
@@ -62,7 +63,7 @@ nav {
     position: absolute;
     height: 3px;
     width: 60%;
-    background: var(--mid-dark);
+    background: var(--mid-black);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -109,23 +110,31 @@ nav {
     transform: rotate(-135deg);
   }
   
-  nav #desktop-menu-list {
-    display: flex;
-  }
-
+ 
   nav #desktop-menu-list{
     display: none;
   }
+
+  nav #desktop-menu-list li:nth-child(4){
+    background-color:  var(--soft-lavender);
+    border: 1px solid black;
+    padding: 2px 5px;
+    
+  }
+
+
 
   @media(min-width:600px ){
 
     nav #desktop-menu-list{
       display: flex;
+      align-items: center;
     }
   }  
 
 
   nav #desktop-menu-list li {
+    text-transform: uppercase;
     padding: 0 var(--small-spacing);
     list-style: none;
   }
@@ -133,7 +142,11 @@ nav {
   nav #desktop-menu-list li a {
     text-decoration: none;
     font-size: var(--mobile-fs);
-    color: var(--mid-dark);
+    color: var(--mid-black);
+  }
+
+  nav #desktop-menu-list li:last-of-type a {
+   font-weight: 900;
   }
   
   /*==================STYLING FOR MOBILE MENU MENU ============================*/
@@ -179,14 +192,19 @@ nav {
   
   
     nav .mobile-menu-list li {
-        
-      margin: 20px 0;
-      opacity: 0;
+    text-transform: uppercase; 
+    margin: 20px 0;
+    opacity: 0;
     animation: fade-in-left 0.2s ease-in-out forwards;
-  
-    }
-    nav .mobile-menu-list li:nth-child(1){
-      animation-delay: 0.25s;
+  }
+
+  nav .mobile-menu-list li:not(:last-child){
+    border-bottom: 1px solid gray;
+  }
+
+
+  nav .mobile-menu-list li:nth-child(1){
+    animation-delay: 0.25s;
     }
     nav .mobile-menu-list li:nth-child(2){
       animation-delay: 0.35s; 
@@ -203,6 +221,15 @@ nav {
     nav .mobile-menu-list li a {
       font-weight: 800;
       text-decoration: none;
-      color: var(--mid-dark);
+      color: var(--mid-black);
     }
+  
+    nav .mobile-menu-list  li:nth-child(4){
+      background-color:  var(--soft-lavender);
+      border: 1px solid black;
+      padding: 2px 5px;
+      display: inline-block;
+       box-sizing: border-box;
+    }
+
   

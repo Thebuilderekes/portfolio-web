@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/navigation.css">
-    <link rel="stylesheet" href="./css/heroSection.css">
-    <link rel="stylesheet" href="./css/portfolioSection.css">
-    <script src="./js/navigation.js"></script>
+    <title>Developer Portfolio-template</title>
+    <script src="https://unpkg.com/scrollreveal"></script> <!--==================scroll reveal library==========--> 
+    <link rel="stylesheet" type="text/css" href="./css/index.css" /> <!--================== index.css =======--> 
+    <link rel="stylesheet" href="./css/navigation.css"> <!--================== navigation.css =======-->
+    <link rel="stylesheet" href="./css/heroSection.css"> <!--================== heroSection.css =======-->
+    <link rel="stylesheet" href="./css/portfolioSection.css"> <!--================== portfolioSection.css =======-->
+    <link rel="stylesheet" href="./css/footer.css"> <!--================== footer.css =======-->
+    <script src="./js/navigation.js"></script><!--================== navigation.js =======-->
   </head>
   <body>
     <header>
@@ -21,8 +23,8 @@
           <ul id = desktop-menu-list>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
             <li><a href="">Contact</a></li>
+            <li><a href="">HIRE ME</a></li>
           </ul>
    
           <button
@@ -35,17 +37,21 @@
           </button>
         </nav>
       </div>
+        <!--================== DESTOP NAVIGATION ENDS ============================-->
 
-        <!--================== MOBILE NAVIGATION============================-->
+
+        <!--================== MOBILE NAVIGATION ============================-->
       <nav class = "mobile-nav">
         <ul class = "mobile-menu-list">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
           <li><a href="">Contact</a></li>
+          <li><a href="">HIRE ME</a></li>
         </ul>
       </nav>
     </header>
+  <!--================== MOBILE NAVIGATION ENDS============================-->
+
 
 
     <!--==================HERO SECTION============================-->
@@ -97,19 +103,27 @@
           </article>
           <article class="case-study">
             <div class="case-study-desc">
-             <h2>Name of project</h2>
-             <a href="http://" target="_blank" rel="noopener noreferrer">projectlink.com</a>
+              <h2>Name of project</h2>
+              <a href="http://" target="_blank" rel="noopener noreferrer">projectlink.com</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum alias ipsa quo officia, distinctio explicabo natus esse doloribus voluptatum.</p>
+              <div class="case-study-links">
+                <a href=""></a>
+                <a href=""></a>
+              </div>
             </div>
-             <a href="http://">
-               <img src="http://via.placeholder.com/300x300/fff"alt="snapshot of website project" >
-             </a>
+            <a href="http://">
+              <img src="http://via.placeholder.com/300x300/fff"alt="snapshot of website project" >
+            </a>
          </article>
         <article class="case-study">
           <div class="case-study-desc">
-          <h2>Name of project</h2>
-          <a href="http://" target="_blank" rel="noopener noreferrer">projectlink.com</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum alias ipsa quo officia, distinctio explicabo natus esse doloribus voluptatum.</p>
+            <h2>Name of project</h2>
+            <a href="http://" target="_blank" rel="noopener noreferrer">projectlink.com</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum alias ipsa quo officia, distinctio explicabo natus esse doloribus voluptatum.</p>
+            <div class="case-study-links">
+              <a href=""></a>
+              <a href=""></a>
+            </div>
           </div>
           <a href="http://">
             <img src="http://via.placeholder.com/300x300/fff"alt="snapshot of website project" >
@@ -117,9 +131,13 @@
         </article>
         <article class="case-study">
           <div class="case-study-desc">
-          <h2>Name of project</h2>
-          <a href="http://" target="_blank" rel="noopener noreferrer">projectlink.com</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum alias ipsa quo officia, distinctio explicabo natus esse doloribus voluptatum.</p>
+            <h2>Name of project</h2>
+            <a href="http://" target="_blank" rel="noopener noreferrer">projectlink.com</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum alias ipsa quo officia, distinctio explicabo natus esse doloribus voluptatum.</p>
+            <div class="case-study-links">
+              <a href=""></a>
+              <a href=""></a>
+            </div>
           </div>
           <a href="http://">
             <img src="http://via.placeholder.com/300x300/fff"alt="snapshot of website project" >
@@ -127,5 +145,25 @@
         </article>
        </section>
  <!--==================PORTFOLIO SECTION ENDS ============================-->
+
+ <!--==================FOOTER ============================-->
+
+    <footer>
+          <div class="my-name">
+            <h3>My name</h3>
+          </div>
+          <nav class = "footer-nav">
+            <ul class = "footer-menu-list">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+          <address>
+            <a class="telephone" href="tel:+1234567891">(123) 456-7891</a> <br><br><br>
+            <a class = "email" href="mailto:ekeopreberedugo1@gmail.com">contactme@myemail.com</a><br><br><br>
+            <a class = "hire-me" href="">HIRE ME</a>
+          </address>
+    </footer>
   </body>
 </html>

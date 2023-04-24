@@ -1,0 +1,31 @@
+footer {
+    margin-top: var(--extra-large-spacing);
+    padding: var(--large-spacing)0;
+    background-color: var(--mid-black);
+    color: var(--soft-white);
+}
+
+footer a {
+    color: var(--soft-white);
+    text-decoration: none;
+    font-style: normal;
+}
+
+@media (min-width: 600px){
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+footer nav ul li {
+        list-style: none;
+        padding: var(--small-spacing) 0;
+}
+
+
+footer address .hire-me {
+    border: 1px solid var(--soft-white);
+    padding: var(--small-spacing) var(--medium-spacing);
+ 
+} 
