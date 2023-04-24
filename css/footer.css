@@ -3,7 +3,18 @@ footer {
     padding: var(--large-spacing)0;
     background-color: var(--mid-black);
     color: var(--soft-white);
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-spacing);
+    align-items: center;
+    text-align: center;
 }
+
+footer h3 {
+    font-size: var(--large-fs);
+}
+
+
 
 footer a {
     color: var(--soft-white);
@@ -14,6 +25,7 @@ footer a {
 @media (min-width: 600px){
     footer {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
 }
