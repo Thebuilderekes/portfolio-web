@@ -1,6 +1,6 @@
 footer {
     margin-top: var(--extra-large-spacing);
-    padding: var(--large-spacing)0;
+    padding: var(--large-spacing) 0;
     background-color: var(--mid-black);
     color: var(--soft-white);
     display: flex;
@@ -39,5 +39,37 @@ footer nav ul li {
 footer address .hire-me {
     border: 1px solid var(--soft-white);
     padding: var(--small-spacing) var(--medium-spacing);
+    transition: 1s all;
  
 } 
+footer address .hire-me:hover {
+    background-color: var(--soft-white);
+    color: var(--mid-black);
+    font-weight: 700;
+}
+
+footer p {
+    color: var(--lavender);    
+}
+
+@media (max-width: 599px ){
+    footer address {
+        order: 2;
+    }
+
+    footer nav {
+        order: 3;
+    }
+
+
+    footer .name {
+        order: 1;
+
+    }
+
+    footer p {
+        font-size: var(--mobile-fs);
+        order: 4;
+    }
+}
+

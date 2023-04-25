@@ -12,6 +12,10 @@
   
   }
   @media (min-width: 600px) {
+
+    .hero-section{
+      margin: var(--extra-large-spacing) var(--large-spacing);
+    }
    h1{
     font-size: var(--large-fs);
    }
@@ -39,7 +43,7 @@
     font-size: var(--medium-fs);
    }
 
-   /*==================Technologies ============================*/
+   /*==================Technologies styles============================*/
    
    .hero-section .technologies {
     margin: var(--large-spacing) 0;
@@ -61,7 +65,7 @@
     padding: var(--small-spacing) var(--medium-spacing);
   }
   
-   /*==================CTA links ============================*/
+   /*==================CTA button styles ============================*/
 
    .hero-section .work-cv-links {
      display: flex;
@@ -111,11 +115,6 @@
 }
 
 
-.hero-section img {
-  display: block;
-  margin: auto;
-  
-}
 
 @media (min-width: 600px){
   .hero-section img {
