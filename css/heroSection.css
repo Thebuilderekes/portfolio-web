@@ -131,3 +131,22 @@
   }
 
 }
+
+
+ @keyframes floatUpDown {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.hero-section img {
+  position: relative;
+  
+  animation: floatUpDown 1s ease-in-out infinite;
+}

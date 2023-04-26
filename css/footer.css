@@ -1,12 +1,13 @@
 footer {
+    height: 100vh;
     margin-top: var(--extra-large-spacing);
-    padding: var(--large-spacing) 0;
     background-color: var(--mid-black);
     color: var(--soft-white);
     display: flex;
     flex-direction: column;
     gap: var(--medium-spacing);
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
     text-align: center;
 }
 

@@ -250,7 +250,7 @@ nav {
       font-weight: 800;
       text-decoration: none;
       color: var(--mid-black);
-      /* padding: var(--medium-spacing); */
+  
     }
 
     nav .mobile-menu-list li a:hover {
