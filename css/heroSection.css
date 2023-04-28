@@ -146,7 +146,9 @@
 }
 
 .hero-section img {
+
   position: relative;
-  
+  display: block;
+  margin: 0 auto;
   animation: floatUpDown 1s ease-in-out infinite;
 }
