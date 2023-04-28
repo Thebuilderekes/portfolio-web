@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.mobile-menu-list');
    navToggleButton.addEventListener('click', () => {
     navMenu.classList.toggle('toggle-visibility')
-    console.log("nav toggle clicked")
     navToggleButton.setAttribute('aria-expanded', navToggleButton.classList.toggle('open'));
+    navToggleButton.setAttribute('aria-pressed',
+      navToggleButton.matches('[aria-pressed=true]') ? false : true
+    )
+
   });
    document.addEventListener('keydown', (event) => {
     if (event.code === 'Space' || event.code === 'Enter') {
@@ -14,4 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
-});
+})
