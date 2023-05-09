@@ -1,55 +1,79 @@
 footer {
-    height: 100vh;
     margin-top: var(--extra-large-spacing);
     background-color: var(--mid-black);
     color: var(--soft-white);
     display: flex;
     flex-direction: column;
-    gap: var(--medium-spacing);
-  justify-content: space-around;
-  align-items: center;
-    text-align: center;
+
 }
 
-footer h3 {
+footer .container {
+    padding: var(--large-spacing) 0;
+    background-color: var(--mid-black);
+    color: var(--soft-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--large-spacing);
+    text-align: center;
+
+    justify-content: space-between;
+}
+
+footer .container  h3 {
     font-size: var(--large-fs);
 }
 
 
 
-footer a {
+footer .container a {
     color: var(--soft-white);
     text-decoration: none;
     font-style: normal;
+    padding: var(--medium-spacing) 0;
 }
 
 @media (min-width: 600px){
-    footer {
+    footer .container {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
+    
+      
+}
 }
 
-footer nav ul li {
+footer .container nav ul li {
         list-style: none;
-        padding: var(--small-spacing) 0;
+        padding: var(--medium-spacing) 0;
+}
+
+footer .container nav ul li a {
+ padding: var(--medium-spacing) 0;
 }
 
 
-footer address .hire-me {
+footer .container nav ul li a:hover {
+    color: var(--lavender);
+}
+
+
+footer .container address .hire-me {
     border: 1px solid var(--soft-white);
     padding: var(--small-spacing) var(--medium-spacing);
     transition: 1s all;
  
 } 
-footer address .hire-me:hover {
+footer .cotainer address .hire-me:hover {
     background-color: var(--soft-white);
     color: var(--mid-black);
     font-weight: 700;
 }
 
 footer p {
+    padding-bottom: var(--small-spacing);
+    text-align: center;
     color: var(--lavender);    
 }
 
@@ -69,6 +93,7 @@ footer p {
     }
 
     footer p {
+        margin-top: var(--medium-spacing);
         font-size: var(--mobile-fs);
         order: 4;
     }

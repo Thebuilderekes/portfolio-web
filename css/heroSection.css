@@ -54,10 +54,16 @@
    }
 
    .hero-section .technologies ul{
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: var(--medium-spacing)
    }
+@media (min-width: 600px){
+  .hero-section .technologies ul{
+    width: 40%;
+  }
+}
 
    .hero-section .technologies ul li {
     font-size: var(--mobile-fs);
