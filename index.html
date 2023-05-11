@@ -31,15 +31,15 @@
 				<!--==================DESKTOP NAVIGATION============================-->
 				<nav class="desktop-nav">
 					<ul id="desktop-menu-list">
-						<li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Contact</a></li>
-						<li><a href="">HIRE ME</a></li>
+						<li><a href="#" rel="noopener noreferrer">Home</a></li>
+						<li><a href="#" rel="noopener noreferrer">About</a></li>
+						<li><a href="#" rel="noopener noreferrer">Contact</a></li>
+						<li><a href="#" rel="noopener noreferrer">HIRE ME</a></li>
 					</ul>
 
-					<button
-						aria-roledescription="navigation-menu-toggle-button"
-						class="nav-toggle"
+					<button id = "menu-toggle"
+						aria-label="Toggle navigation menu"
+						class="nav-toggle" aria-controls="mobile-nav"
 					>
 						<span></span>
 						<span></span>
@@ -50,13 +50,13 @@
 			<!--================== DESTOP NAVIGATION ENDS ============================-->
 
 			<!--================== MOBILE NAVIGATION ============================-->
-			<nav class="mobile-nav">
+			<nav class="mobile-nav" id="mobile-nav" aria-labelledby="menu-toggle">
 				<ul class="mobile-menu-list">
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">HIRE ME</a></li>
-				</ul>
+						<li><a href="#" rel="noopener noreferrer">Home</a></li>
+						<li><a href="#" rel="noopener noreferrer">About</a></li>
+						<li><a href="#" rel="noopener noreferrer">Contact</a></li>
+						<li><a href="#" rel="noopener noreferrer">HIRE ME</a></li>
+					</ul>
 			</nav>
 		</header>
 		<!--================== MOBILE NAVIGATION ENDS============================-->
@@ -67,7 +67,8 @@
 			<h1 class="headline">MY NAME</h1>
 			<div class="hero-section-description">
 				<p class="punchline">
-					Hi, i'm name. I Lorem ipsum dolor sit amet, consectetur adipisicing
+					Hi, i'm Ekeopre. I'm a self taught Frontend Developer who specializes in creating pixel-perfect accessible websites.
+					Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. Officia, doloremque. Repellat nostrum deserunt fuga accusamus
 					modi, fugiat excepturi dolorem asperiores.
 				</p>
@@ -97,7 +98,8 @@
 			</article>
 
 			<div class="work-cv-links">
-				<a class="work widget" href="#portflio-section">VIEW PROJECTS</a>
+				<a class="work widget" href="#portfolio-section">VIEW PROJECTS</a>
+
 				<a
 					class="download-cv widget"
 					href="#"
@@ -300,11 +302,11 @@
 		<!--==================FOOTER ============================-->
 
 		<footer>
-			<div class="container">
+		  	<div class="container">
 
-			<div class="my-name widget">
-				<h3>My name</h3>
-			</div>
+		    	<div class="my-name widget">
+				    <h3>My name</h3>
+			    </div>
 			<nav class="footer-nav widget">
 				<ul class="footer-menu-list">
 					<li><a href="">Home</a></li>
