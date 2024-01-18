@@ -1,45 +1,41 @@
-*, img{
+*,
+img {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  -webkit-tap-highlight-color: rgba(255, 255,
+  /* -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;             */
 
-255,0) !important;
-
--webkit-focus-ring-color: rgba(255, 255,
-
-255, 0) !important;
-
-outline: none !important;
-
+  /* -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; */
 
 }
 
 :root {
   /*==================FONT SIZE ============================*/
-  
+
   --mobile-fs: 14px;
   --desktop-fs: 16px;
   --large-fs: 60px;
-  --small-fs: 12px;
+  --semi-large-fs: 30px;
   --medium-fs: 18px;
- 
+  --default-fs: 16px;
+  --small-fs: 12px;
+
   /*==================SPACING ============================*/
-  
-  --small-spacing: 10px;
-  --medium-spacing: 20px;
+
+  --extra-large-spacing: 120px;
   --large-spacing: 50px;
-  --extra-large-spacing: 150px;
+  --medium-spacing: 20px;
+  --small-spacing: 10px;
 
   /*==================COLORS============================*/
 
- --soft-lavender :  #c6caf5;
+  --soft-lavender: #c6caf5;
   --lavender: #9fa6fa;
-  --soft-white : #f5f3f3;
-  --mid-black: #111111;
-
+  --soft-white: #f5f3f3;
+  --mid-black: #212121;
+  --hover-color:#1c1c68;
 }
 
 /*==================GENERAL STYLES ============================*/
@@ -48,7 +44,6 @@ outline: none !important;
   font-family: 'nunito';
   src: url('/assets/fonts/Nunito-VariableFont_wght.ttf');
 }
-
 
 html {
   width: 100%;
@@ -64,7 +59,6 @@ html.sr .widget {
   visibility: hidden;
 }
 
-
 body {
   width: 100%;
   background-color: var(--soft-lavender);
@@ -73,17 +67,17 @@ body {
 
 a {
   text-decoration: none;
+}         
+a:focus-visible {
+  outline: 2px solid rgb(82, 82, 214);
 }
 
 h2 {
+
   color: var(--mid-black);
 }
 
- 
-
-
-
-
-
-    
-
+.section-vertical-margin{
+  margin-top: var(--large-spacing);
+  margin-bottom: var(--large-spacing);
+}

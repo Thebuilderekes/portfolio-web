@@ -1,71 +1,93 @@
-
 /*==================STYLING FOR PORTFOLIO SECTION ============================*/
 
-
-
 .portfolio-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 var(--medium-spacing);
-    padding: var(--large-spacing) 0;
-    background-color: var(--lavender); 
-    border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--large-spacing) 0;
+  background-color: var(--lavender);
+  border: 1px solid gray;
+}
+
+@media (min-width: 600px) {
+  .portfolio-section {
+    margin: var(--extra-large-spacing) var(--large-spacing);
   }
   .portfolio-section h2 {
-   font-size: 24px;
-  }
-
-  @media (min-width: 600px){
-    .portfolio-section {
-      margin: 0 var(--large-spacing);
-
-    }
-    .portfolio-section h2 {
-      font-size: 32px;
-      text-align: center;
-     }
-  }
-  
-  
-  
-  
-  .portfolio-section .case-study, .case-study-desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--medium-spacing);
-   
-  }
-  
-  
-  .portfolio-section .case-study {
+    font-size: var(--semi-large-fs);
     margin: var(--large-spacing) 0;
-  }
-  
-  .portfolio-section .case-study .case-study-desc {
-    width: 80%;
-  }
-  
-  @media (min-width:600px){
-    .portfolio-section .case-study {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-  
-    }
-  
-    .portfolio-section .case-study .case-study-desc {
-     width: 40%;
-    }
-  }
-  
-  
-  .portfolio-section .case-study .case-study-desc a {
-    text-decoration: none;
-  }
-  
-  .portfolio-section .case-study .case-study-desc p {
     text-align: center;
   }
+}
+
+@media (max-width: 500px) {
+  .portfolio-section{
+    margin: 0 var(--medium-spacing);
+  }
+  .portfolio-section h2 {
+    font-size: var(--medium-fs);
+  }
   
+}
+
+
+/*---------- portfolio case study styles---------- */
+
+.portfolio-section .case-study {
+  margin: var(--large-spacing) var(--large-spacing);
+  padding: var(--large-spacing) 0;
+  border: 1px solid var(--soft-lavender);
+  box-shadow: 5px 2px 9px 4px rgba(108, 114, 240, 0.75);
+  -webkit-box-shadow: 5px 2px 9px 4px rgba(108, 114, 240, 0.75);
+  -moz-box-shadow: 5px 2px 9px 4px rgba(108, 114, 240, 0.75);
+}
+
+@media (max-width: 500px){
+.portfolio-section .case-study {
+  padding: 0;
+}
+
+}
+
+.portfolio-section img {
+  width: 300px;
+  height: 300px;
+}
+
+
+.portfolio-section .case-study {
+  border: 1px solid var(--soft-lavender);
+}
+
+.portfolio-section .case-study,
+.case-study-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--medium-spacing);
+}
+
+.portfolio-section .case-study .case-study-desc {
+  width: 80%;
+}
+
+@media (min-width: 600px) {
+  .portfolio-section .case-study {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .portfolio-section .case-study .case-study-desc {
+    width: 40%;
+  }
+}
+
+.portfolio-section .case-study .case-study-desc a {
+  text-decoration: none;
+}
+
+.portfolio-section .case-study .case-study-desc p {
+  text-align: center;
+}
+
