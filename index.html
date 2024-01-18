@@ -1,304 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> Jonathan - Developer portfolio</title>
-		<meta name="description" content="A Web developer who specializes in web design and frontend web development.
-		<meta name="keywords" content="web developer, frontend developer, html, css, JavaScript, react, wordpress ">
-		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-		<!--====scroll reveal library===-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan - Developer portfolio</title>
+    <meta
+      name="description"
+      content="A Web developer who specializes in web design and frontend web development."
+    />
+    <meta
+      name="keywords"
+      content="web developer, frontend developer, html, css, JavaScript, react, wordpress"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--====scroll reveal library===-->
 
-		<!--================== index.css =======-->
-		<link rel="stylesheet" type="text/css" href="./css/index.css" />
-	
-		<!--================== navigation.css =======-->
-		<link rel="stylesheet" href="./css/navigation.css" />
-	
-		<!--================== heroSection.css =======-->
-		<link rel="stylesheet" href="./css/heroSection.css" />
-		<!--================== portfolioSection.css =======-->
-	
-		<link rel="stylesheet" href="./css/portfolioSection.css" />
-		<!--================== footer.css =======-->
-	
-		<link rel="stylesheet" href="./css/footer.css" />
-	
-		<!--================== navigation.js =======-->
-		<script src="./js/navigation.js"></script>
-	</head>
-	<body>
-		<header>
-			<div class="nav-container">
-				<div>
-					<a class="logo" href="/">Jonathan</a>
-				</div>
-				<!--==================DESKTOP NAVIGATION============================-->
-				<nav class="desktop-nav">
-					<ul id="desktop-menu-list">
-						<li><a href="#" rel="noopener noreferrer">Home</a></li>
-						<li><a href="#" rel="noopener noreferrer">About</a></li>
-						<li><a href="#footer" rel="noopener noreferrer">Contact</a></li>
-						<li class = "hire-me-desktop"><a href="#" rel="noopener noreferrer">Hire me</a></li>
-					</ul>
+    <!--================== index.css =======-->
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
-					<button id = "menu-toggle"
-						aria-label="Toggle navigation menu"
-						class="nav-toggle" aria-controls="mobile-nav"
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</nav>
-				
-			</div>
-			<!--================== DESKTOP NAVIGATION ENDS ============================-->
+    <!--================== navigation.css =======-->
+    <link rel="stylesheet" href="./css/navigation.css" />
 
-			<!--================== MOBILE NAVIGATION ============================-->
-			<nav class="mobile-nav" id="mobile-nav" aria-labelledby="menu-toggle">
-				<ul class="mobile-menu-list">
-						<li><a href="#" rel="noopener noreferrer">Home</a></li>
-						<li><a href="#" rel="noopener noreferrer">About</a></li>
-						<li><a href="#footer" rel="noopener noreferrer">Contact</a></li>
-						<li class= "hire-me-mobile"><a href="#" rel="noopener noreferrer">Hire me</a></li>
-					</ul>
-			</nav>
-		</header>
-		<!--================== MOBILE NAVIGATION ENDS============================-->
+    <!--================== heroSection.css =======-->
+    <link rel="stylesheet" href="./css/heroSection.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <!--================== portfolioSection.css =======-->
 
-		<!--==================HERO SECTION============================-->
-         <main>
-		<section class="hero-section">
-			<h1 class="headline">FRONTEND DEVELOPER</h1>
-			<article class="hero-section-description">
-				<p class="punchline">
-					Hello, I'm Jonathan. I'm deeply passionate about crafting visually stunning websites with high conversion rates and user-friendly interfaces. With my extensive knowledge in web development and design principles, I am dedicated to creating immersive user experiences that effectively convey a brand's identity and values.  
-				<p class="punchline">
-					I firmly believe that a well-designed website is pivotal in captivating users, boosting engagement, and achieving business objectives.
-				</p>
-				<p class="punchline">
-					Would you like to collaborate with me to transform your vision into a remarkable reality? <br> <a href="#" rel="noopener noreferrer">Contact me</a> 
-				</p>
-			</article>
-			<article class="technologies">
-				<h2 class="tagline">Technologies</h2>
-				<ul class="widget">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Git</li>
-					<li>WordPress</li>
-					<li>JavaScript</li>
-					<li>React</li>
-				</ul>
-			</article>
+    <link rel="stylesheet" href="./css/portfolioSection.css" />
+    <!--================== footer.css =======-->
 
-			<div class="work-cv-links">
-				<a class="work widget" href="#portfolio-section">VIEW PROJECTS</a>
+    <link rel="stylesheet" href="./css/footer.css" />
 
-				<a
-					class="download-cv widget"
-					href="#"
-					target="_blank"
-					rel="noopener noreferrer"
-					>DOWNLOAD CV</a
-				>
-			</div>
-			<img
-				src="./assets/img/icons8-down-arrow-ios-16-glyph/icons8-down-arrow-60.png"
-				alt="an arrow point downwards"
-			/>
-		</section>
-		<!--==================HERO SECTION ENDS ============================-->
+    <!--================== navigation.js =======-->
+    <script src="./js/navigation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div>
+          <a class="logo" href="/">Jonathan</a>
+        </div>
+        <!--==================DESKTOP NAVIGATION============================-->
+        <nav class="desktop-nav">
+          <ul id="desktop-menu-list">
+            <li><a href="#" rel="noopener noreferrer">Home</a></li>
+            <li><a href="#" rel="noopener noreferrer">About</a></li>
+            <li><a href="#footer" rel="noopener noreferrer">Contact</a></li>
+            <li class="hire-me-desktop">
+              <a href="#" rel="noopener noreferrer">Hire me</a>
+            </li>
+          </ul>
 
-		<!--==================PORTFOLIO SECTION ============================-->
+          <button
+            id="menu-toggle"
+            aria-label="Toggle navigation menu"
+            class="nav-toggle"
+            aria-controls="mobile-nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+      <!--================== DESKTOP NAVIGATION ENDS ============================-->
 
-		<section id="portfolio-section" class="portfolio-section">
-			<h2 class="tagline">PROJECT SHOWCASE</h2>
-			<article class="case-study punchline">
-				
-				<figure>
-					<a href="#">
-						<img
-							src= "https://picsum.photos/300/300"
-							alt="snapshot of a grocery app homepage"
-						/>
-					</a>
-				</figure>
-				<div class="case-study-desc">
-					<h2>Name of project</h2>
-					<a href="#" target="_blank" rel="noopener noreferrer"
-						>projectlink.com</a
-					>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
-						alias ipsa quo officia, distinctio explicabo natus esse doloribus
-						voluptatum.
-					</p>
-					<div class="case-study-links">
-						<a
-							aria-label="visit github page"
-							href="#"
-							target="_blank"
-						>
-							<svg
-								xmlnsXlink="http://www.w3.org/2000/svg"
-								width="30"
-								height="30"
-								viewBox="0 0 24 24"
-							>
-								{' '}
-								<title>GitHub</title>
-								{' '}
-								<path
-									d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
-									fill="#000"
-								/>
-							</svg>
-						</a>
+      <!--================== MOBILE NAVIGATION ============================-->
+      <nav class="mobile-nav" id="mobile-nav" aria-labelledby="menu-toggle">
+        <ul class="mobile-menu-list">
+          <li><a href="#" rel="noopener noreferrer">Home</a></li>
+          <li><a href="#" rel="noopener noreferrer">About</a></li>
+          <li><a href="#footer" rel="noopener noreferrer">Contact</a></li>
+          <li class="hire-me-mobile">
+            <a href="#" rel="noopener noreferrer">Hire me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--================== MOBILE NAVIGATION ENDS============================-->
 
-					</div>
-				</div>
-			</article>
-			<article class="case-study punchline">
-				
-			</div>
-			<figure>
-				<a href="#">
-					<img
-						src= "https://picsum.photos/300/300"
-						alt="snapshot of a grocery app homepage"
-					/>
-				</a>
-			</figure>
-			<div class="case-study-desc">
-				<h2>Name of project</h2>
-				<a href="#" target="_blank" rel="noopener noreferrer"
-					>projectlink.com</a
-				>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
-					alias ipsa quo officia, distinctio explicabo natus esse doloribus
-					voluptatum.
-				</p>
-				<div class="case-study-links">
-					<a
-						aria-label="visit github page"
-						href="#"
-						target="_blank"
-					>
-						<svg
-							xmlnsXlink="http://www.w3.org/2000/svg"
-							width="30"
-							height="30"
-							viewBox="0 0 24 24"
-						>
-							{' '}
-							<title>GitHub</title>
-							{' '}
-							<path
-								d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
-								fill="#000"
-							/>
-						</svg>
-					</a>
+    <!--==================HERO SECTION============================-->
+    <main>
+      <section class="hero-section">
+        <h1 class="headline">FRONTEND DEVELOPER</h1>
+        <article class="hero-section-description">
+          <p class="punchline">
+            Hello, I'm Jonathan. I'm deeply passionate about crafting visually
+            stunning websites with high conversion rates and user-friendly
+            interfaces. With my extensive knowledge in web development and
+            design principles, I am dedicated to creating immersive user
+            experiences that effectively convey a brand's identity and values.
+          </p>
 
-				</div>
-			</div>
-		</article>
-		<article class="case-study punchline">
-				
-		</div>
-		<figure>
-			<a href="#">
-				<img
-					src= "https://picsum.photos/300/300"
-					alt="snapshot of a grocery app homepage"
-				/>
-			</a>
-		</figure>
-		<div class="case-study-desc">
-			<h2>Name of project</h2>
-			<a href="#" target="_blank" rel="noopener noreferrer"
-				>projectlink.com</a
-			>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
-				alias ipsa quo officia, distinctio explicabo natus esse doloribus
-				voluptatum.
-			</p>
-			<div class="case-study-links">
-				<a
-					aria-label="visit github page"
-					href="#"
-					target="_blank"
-				>
-					<svg
-						xmlnsXlink="http://www.w3.org/2000/svg"
-						width="30"
-						height="30"
-						viewBox="0 0 24 24"
-					>
-						{' '}
-						<title>GitHub</title>
-						{' '}
-						<path
-							d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
-							fill="#000"
-						/>
-					</svg>
-				</a>
+          <p class="punchline">
+            I firmly believe that a well-designed website is pivotal in
+            captivating users, boosting engagement, and achieving business
+            objectives.
+          </p>
+          <p class="punchline">
+            Would you like to collaborate with me to transform your vision into
+            a remarkable reality? <br />
+            <a href="#" rel="noopener noreferrer">Contact me</a>
+          </p>
+        </article>
+        <article class="technologies">
+          <h2 class="tagline">Technologies</h2>
+          <ul class="widget">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>WordPress</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </article>
 
-			</div>
-		</div>
-	</article>
+        <div class="work-cv-links">
+          <a class="work widget" href="#portfolio-section">VIEW PROJECTS</a>
 
-			
-		</section>
-		<!--==================PORTFOLIO SECTION ENDS ============================-->
-	</main>
-		<!--==================FOOTER ============================-->
+          <a
+            class="download-cv widget"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >DOWNLOAD CV</a
+          >
+        </div>
+        <img
+          src="./assets/img/icons8-down-arrow-ios-16-glyph/icons8-down-arrow-60.png"
+          alt="an arrow point downwards"
+        />
+      </section>
+      <!--==================HERO SECTION ENDS ============================-->
+      <section class="services">
+        <h2 class="tagline">MY SERVICES</h2>
 
-		<footer id="footer">
-		  	<div class="container">
+        <div class="grid-cards">
+          <article class="punchline">
+            <img
+              class="tagline"
+              src="/assets/img//design-icon/icons8-design-80.png"
+              alt=""
+            />
+            <h3 class="widget">UI design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              cumque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quidem mollitia autem soluta beatae iure quaerat porro
+              cupiditate hic incidunt.!
+            </p>
+          </article>
+          <article class="punchline">
+            <img
+              class="tagline"
+              src="/assets/img/icons8-web-development-dotted/icons8-web-development-80.svg"
+              alt=""
+            />
+            <h3 class="widget">Web development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              cumque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quidem mollitia autem soluta beatae iure quaerat porro
+              cupiditate hic incidunt.!
+            </p>
+          </article>
+          <article class="punchline">
+            <img
+              class="tagline"
+              src="/assets/img/seo-icon/icons8-seo-80.png"
+              alt="seo icon"
+            />
+            <h3 class="widget">SEO</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              cumque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quidem mollitia autem soluta beatae iure quaerat porro
+              cupiditate hic incidunt.!
+            </p>
+          </article>
+        </div>
+      </section>
 
-		    	<div class="my-name widget">
-				    <h3>Jonathan Builds</h3>
-			    </div>
-			<nav class="footer-nav widget">
-				<ul class="footer-menu-list">
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="contact-info widget"">
-                 <h3>Contact</h3>
-			<address>
-				<a class="telephone" href="tel:+1234567891">(123) 456-7891</a>
-				<br /><br /><br />
-				<a class="email" href="#"
-					>contactme@myemail.com</a
-				><br /><br /><br />
-				<a class="hire-me" href="#">HIRE ME</a>
-			</address>
-		</div>
+      <!--==================PORTFOLIO SECTION ============================-->
 
-		</div>
+      <section id="portfolio-section" class="portfolio-section">
+        <h2 class="tagline">PROJECT SHOWCASE</h2>
 
-			<p class="credits">Made by The Builder.</p>
-		</footer>
-		<!--==================FOOTER ENDS============================-->
-             
+        <article class="case-study punchline">
+          <figure>
+            <a href="#">
+              <img
+                class="widget"
+                src="https://picsum.photos/300/300"
+                alt="snapshot of a grocery app homepage"
+              />
+            </a>
+          </figure>
+          <div class="case-study-desc tagline">
+            <h2>Name of project</h2>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >projectlink.com</a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+              alias ipsa quo officia, distinctio explicabo natus esse doloribus
+              voluptatum.
+            </p>
+            <div class="case-study-links">
+              <a aria-label="visit github page" href="#" target="_blank">
+                <svg
+                  xmlnsXlink="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  {' '}
+                  <title>View code on GitHub</title>
+                  {' '}
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
 
-		<!--==================SCROLL REVEAL LIBRARY SCRIPT============================-->
+        <article class="case-study punchline">
+          <figure>
+            <a href="#">
+              <img
+                class="widget"
+                src="https://picsum.photos/300/300"
+                alt="snapshot of a grocery app homepage"
+              />
+            </a>
+          </figure>
+          <div class="case-study-desc tagline">
+            <h2>Name of project</h2>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >projectlink.com</a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+              alias ipsa quo officia, distinctio explicabo natus esse doloribus
+              voluptatum.
+            </p>
+            <div class="case-study-links">
+              <a aria-label="visit github page" href="#" target="_blank">
+                <svg
+                  xmlnsXlink="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  {' '}
+                  <title>View code on GitHub</title>
+                  {' '}
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="case-study punchline">
+          <figure>
+            <a href="#">
+              <img
+                class="widget"
+                src="https://picsum.photos/300/300"
+                alt="snapshot of a grocery app homepage"
+              />
+            </a>
+          </figure>
+          <div class="case-study-desc tagline">
+            <h2>Name of project</h2>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >projectlink.com</a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+              alias ipsa quo officia, distinctio explicabo natus esse doloribus
+              voluptatum.
+            </p>
+            <div class="case-study-links">
+              <a aria-label="visit github page" href="#" target="_blank">
+                <svg
+                  xmlnsXlink="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  {' '}
+                  <title>View code on GitHub</title>
+                  {' '}
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--==================PORTFOLIO SECTION ENDS ============================-->
+    </main>
+    <!--==================FOOTER ============================-->
 
-		<script>
-			ScrollReveal({ reset: true });
-			ScrollReveal().reveal(".headline", { duration: 500 });
-			ScrollReveal().reveal(".punchline", { delay: 600 });
-			ScrollReveal().reveal(".tagline", { delay: 700 });
-			ScrollReveal().reveal(".widget", { interval: 800 });
-		</script>
-	</body>
+    <footer id="footer">
+      <div class="container">
+        <div class="my-name punchline">
+          <h3>Jonathan Builds</h3>
+        </div>
+        <nav class="footer-nav tagline">
+          <ul class="footer-menu-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info widget">
+          <h3>Contact</h3>
+          <address>
+            <a class="telephone" href="tel:+1234567891">(123) 456-7891</a>
+            <br /><br /><br />
+            <a class="email" href="#">contactme@myemail.com</a
+            ><br /><br /><br />
+            <a class="hire-me" href="#">HIRE ME</a>
+          </address>
+        </div>
+      </div>
+
+      <p class="credits">Made by The Builder.</p>
+    </footer>
+    <!--==================FOOTER ENDS============================-->
+
+    <!--==================SCROLL REVEAL LIBRARY SCRIPT============================-->
+
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".headline", { duration: 500 });
+      ScrollReveal().reveal(".punchline", { delay: 600 });
+      ScrollReveal().reveal(".tagline", { delay: 700 });
+      ScrollReveal().reveal(".widget", { interval: 800 });
+    </script>
+  </body>
 </html>

@@ -16,7 +16,6 @@
   padding: var(--medium-spacing) 0;
 }
 
-
 @media (min-width: 600px) {
   .hero-section {
     margin: var(--extra-large-spacing) var(--large-spacing);
@@ -27,11 +26,10 @@
 }
 
 .hero-section .hero-section-description {
- display: flex;
- justify-content: space-between;
- gap: var(--medium-spacing);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--medium-spacing);
 }
-
 
 .hero-section .hero-section-description p {
   font-size: var(--medium-fs);
@@ -42,20 +40,14 @@
   .hero-section .hero-section-description p {
     font-size: var(--default-fs);
   }
-  
 }
 
-
 .hero-section .hero-section-description p a {
-  
-  color: var(--hover-color);
+  color: var(--dark-lavender);
   font-weight: 700;
   text-decoration: underline;
   animation: 1s all;
-
 }
-
-
 
 @media (max-width: 600px) {
   .hero-section .hero-section-description {
@@ -68,8 +60,6 @@
   }
 }
 
-
-
 /*==================Technologies styles============================*/
 
 .hero-section .technologies {
@@ -79,7 +69,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .hero-section .technologies h2 {
   font-size: var(--semi-large-fs);
@@ -150,7 +139,7 @@
 
 .hero-section .work-cv-links .download-cv:hover,
 .download-cv:focus-visible {
-  background-color: var(--hover-color);
+  background-color: var(--dark-lavender);
   color: var(--soft-white);
 }
 

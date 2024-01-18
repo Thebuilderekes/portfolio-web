@@ -8,7 +8,6 @@ img {
   /* -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;             */
 
   /* -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; */
-
 }
 
 :root {
@@ -33,16 +32,17 @@ img {
 
   --soft-lavender: #c6caf5;
   --lavender: #9fa6fa;
+  --softer-white: #7e7e7e;
   --soft-white: #f5f3f3;
   --mid-black: #212121;
-  --hover-color:#1c1c68;
+  --dark-lavender: #2c2c99;
 }
 
 /*==================GENERAL STYLES ============================*/
 
 @font-face {
-  font-family: 'nunito';
-  src: url('/assets/fonts/Nunito-VariableFont_wght.ttf');
+  font-family: "nunito";
+  src: url("/assets/fonts/Nunito-VariableFont_wght.ttf");
 }
 
 html {
@@ -62,22 +62,17 @@ html.sr .widget {
 body {
   width: 100%;
   background-color: var(--soft-lavender);
-  font-family: 'nunito';
+  font-family: "nunito";
 }
 
 a {
   text-decoration: none;
-}         
+}
 a:focus-visible {
   outline: 2px solid rgb(82, 82, 214);
 }
 
-h2 {
-
-  color: var(--mid-black);
-}
-
-.section-vertical-margin{
+.section-vertical-margin {
   margin-top: var(--large-spacing);
   margin-bottom: var(--large-spacing);
 }

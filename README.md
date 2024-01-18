@@ -8,11 +8,4 @@ p
 ###Porfolio section
 ###Footer Section
 
-
-
-
-
- 
-
-
                   # portfolio-web

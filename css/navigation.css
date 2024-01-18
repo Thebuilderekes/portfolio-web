@@ -144,7 +144,7 @@ nav #desktop-menu-list li a {
 }
 
 nav #desktop-menu-list li a:hover {
-  color: var(--hover-color);
+  color: var(--dark-lavender);
 }
 
 nav #desktop-menu-list .hire-me-desktop a {
@@ -158,7 +158,7 @@ nav #desktop-menu-list .hire-me-desktop a {
 }
 
 nav #desktop-menu-list .hire-me-desktop a:hover {
-  background-color:var(--hover-color);
+  background-color: var(--dark-lavender);
   color: white;
   font-weight: 900;
 }
@@ -229,7 +229,7 @@ nav .mobile-menu-list li a {
 }
 
 nav .mobile-menu-list li a:hover {
-  color: var(--hover-color);
+  color: var(--dark-lavender);
 }
 
 nav .mobile-menu-list .hire-me-mobile a {
@@ -242,6 +242,6 @@ nav .mobile-menu-list .hire-me-mobile a {
 }
 
 nav .mobile-menu-list .hire-me-mobile a:hover {
-  background-color:var(--hover-color);
+  background-color: var(--dark-lavender);
   color: white;
 }
