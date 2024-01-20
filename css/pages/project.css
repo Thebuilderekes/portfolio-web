@@ -10,7 +10,6 @@
   .project_section {
     margin: var(--large-spacing) var(--medium-spacing);
     padding: var(--small-spacing);
- 
   }
 }
 
@@ -18,15 +17,12 @@
   margin: var(--large-spacing) 0;
 }
 
-
 @media only screen and (min-width: 414px) and (max-width: 900px) {
   .project_section h1 {
-    font-size: var(--above-medium-fs) ;
+    font-size: var(--above-medium-fs);
     margin: var(--medium-spacing) var(--small-spacing);
   }
-  
 }
-
 
 .project_section .text_grid {
   display: grid;
@@ -38,22 +34,17 @@
   margin: var(--large-spacing) 0;
 }
 
-
-
-
 .project_section .text_grid .stretched_grid {
   width: 80%;
   grid-area: 2 / 1 / 3 / 3;
 }
 @media (max-width: 414px) {
-
   .project_section .text_grid {
-    display: block;
-   
+    display: flex;
+    flex-direction: column;
+    gap: var(--large-spacing);
   }
 }
-
-
 
 @media (max-width: 1050px) {
   .project_section .text_grid .stretched_grid {

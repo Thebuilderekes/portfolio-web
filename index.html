@@ -18,20 +18,8 @@
     <!--================== index.css =======-->
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
-    <!--================== navigation.css =======-->
-    <!-- <link rel="stylesheet" href="./css/navigation.css" /> -->
-
-    <!--================== heroSection.css =======-->
-    <!-- <link rel="stylesheet" href="./css/heroSection.css" />
-    <link rel="stylesheet" href="./css/services.css" /> -->
-    <!--================== portfolioSection.css =======-->
-<!-- 
-    <link rel="stylesheet" href="./css/portfolioSection.css" /> -->
-    <!--================== footer.css =======-->
-
-
     <!--================== navigation.js =======-->
-    <script src="./js/navigation.js"></script>
+    <script defer src="./js/navigation.js"></script>
   </head>
   <body>
     <header>
@@ -82,7 +70,7 @@
     <main>
       <section class="hero-section">
         <h1 class="headline">FRONTEND DEVELOPER</h1>
-        <article class="hero-section-description">
+        <div class="hero-section-description">
           <p class="punchline">
             Hello, I'm Jonathan. I'm deeply passionate about crafting visually
             stunning websites with high conversion rates and user-friendly
@@ -101,7 +89,7 @@
             a remarkable reality? <br />
             <a href="#" rel="noopener noreferrer">Contact me</a>
           </p>
-        </article>
+        </div>
         <article class="technologies">
           <h2 class="tagline">Technologies</h2>
           <ul class="widget">
@@ -114,18 +102,19 @@
           </ul>
         </article>
 
-        <div class="work-cv-links">
-          <a class="work widget" href="#portfolio-section">VIEW PROJECTS</a>
+        <div class="work-cv-links widget">
+          <a class="work" href="#portfolio-section">VIEW PROJECTS</a>
 
           <a
-            class="download-cv widget"
+            class="download-cv"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             >DOWNLOAD CV</a
           >
         </div>
-        <img class="floating-arrow"
+        <img
+          class="floating-arrow"
           src="./assets/img/icons8-down-arrow-ios-16-glyph/icons8-down-arrow-60.png"
           alt="an arrow point downwards"
         />
@@ -186,7 +175,7 @@
         <h2 class="tagline">PROJECT SHOWCASE</h2>
 
         <article class="case-study punchline">
-          <figure>
+          <figure class="case-study__figure-container">
             <a href="./pages/project1.html">
               <img
                 class="widget"
@@ -195,15 +184,17 @@
               />
             </a>
           </figure>
-          <div class="case-study__card tagline">
+          <div class="case-study__text tagline">
             <h3>Name of project</h3>
             <a href="#" target="_blank" rel="noopener noreferrer"
-              >projectlink.com</a
+              >Visit website</a
             >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
               alias ipsa quo officia, distinctio explicabo natus esse doloribus
-              voluptatum.
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
+              esse doloribus voluptatum.
             </p>
             <div class="case-study__github-link">
               <a aria-label="visit github page" href="#" target="_blank">
@@ -221,13 +212,14 @@
                     fill="#fff"
                   />
                 </svg>
+                <span> GitHub </span>
               </a>
             </div>
           </div>
         </article>
 
         <article class="case-study punchline">
-          <figure>
+          <figure class="case-study__figure-container">
             <a href="./pages/project2.html">
               <img
                 class="widget"
@@ -236,15 +228,17 @@
               />
             </a>
           </figure>
-          <div class="case-study__card tagline">
+          <div class="case-study__text tagline">
             <h3>Name of project</h3>
             <a href="#" target="_blank" rel="noopener noreferrer"
-              >projectlink.com</a
+              >Visit website</a
             >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
               alias ipsa quo officia, distinctio explicabo natus esse doloribus
-              voluptatum.
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
+              esse doloribus voluptatum.
             </p>
             <div class="case-study__github-link">
               <a aria-label="visit github page" href="#" target="_blank">
@@ -262,12 +256,13 @@
                     fill="#fff"
                   />
                 </svg>
+                <span> GitHub </span>
               </a>
             </div>
           </div>
         </article>
         <article class="case-study punchline">
-          <figure>
+          <figure class="case-study__figure-container">
             <a href="./pages/project3.html">
               <img
                 class="widget"
@@ -276,15 +271,17 @@
               />
             </a>
           </figure>
-          <div class="case-study__card tagline">
+          <div class="case-study__text tagline">
             <h3>Name of project</h3>
             <a href="#" target="_blank" rel="noopener noreferrer"
-              >projectlink.com</a
+              >Visit website</a
             >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
               alias ipsa quo officia, distinctio explicabo natus esse doloribus
-              voluptatum.
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
+              esse doloribus voluptatum.
             </p>
             <div class="case-study__github-link">
               <a aria-label="visit github page" href="#" target="_blank">
@@ -302,6 +299,7 @@
                     fill="#fff"
                   />
                 </svg>
+                <span> GitHub </span>
               </a>
             </div>
           </div>
@@ -313,17 +311,17 @@
 
     <footer id="footer">
       <div class="container">
-        <div class="my-name punchline">
+        <div class="my-name">
           <h3>Jonathan Builds</h3>
         </div>
-        <nav class="footer-nav tagline">
+        <nav class="footer-nav">
           <ul class="footer-menu-list">
             <li><a href="/">Home</a></li>
             <li><a href="/">About</a></li>
             <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
-        <div class="contact-info widget">
+        <div class="contact-info">
           <h3>Contact</h3>
           <address>
             <a class="telephone" href="tel:+1234567891">(123) 456-7891</a>
@@ -334,12 +332,16 @@
           </address>
         </div>
       </div>
-
-      <p class="credits">Made by The Builder.</p>
-       
       <div class="attributions">
-        <a target="_blank" href="https://icons8.com/icon/102698/instagram-check-mark">Icons by</a> <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a
+          target="_blank"
+          href="https://icons8.com/icon/102698/instagram-check-mark"
+          >Icons by</a
+        >
+        <a target="_blank" href="https://icons8.com">Icons8</a>
       </div>
+      <p class="credits">Made by The Builder.</p>
+
    
     </footer>
     <!--==================FOOTER ENDS============================-->

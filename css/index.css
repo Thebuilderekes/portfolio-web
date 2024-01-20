@@ -5,9 +5,6 @@ img {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;             */
-
-  /* -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; */
 }
 
 :root {
@@ -35,7 +32,14 @@ img {
   --lavender: #9fa6fa;
   --softer-white: #7e7e7e;
   --soft-white: #e2e2e2;
-  --radial-gradient: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(159,166,250,1) 0%, rgba(226,226,226,1) 33%, rgba(226,226,226,1) 92%, rgba(226,226,226,1) 94%);
+  --radial-gradient: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(159, 166, 250, 1) 0%,
+    rgba(226, 226, 226, 1) 33%,
+    rgba(226, 226, 226, 1) 92%,
+    rgba(226, 226, 226, 1) 94%
+  );
   --mid-black: #212121;
   --dark-lavender: #2c2c99;
 }
@@ -43,8 +47,8 @@ img {
 /*==================GENERAL STYLES ============================*/
 
 @font-face {
-  font-family: 'nunito';
-  src: url('/assets/fonts/Nunito-VariableFont_wght.ttf');
+  font-family: "nunito";
+  src: url("/assets/fonts/Nunito-VariableFont_wght.ttf");
 }
 
 html {
@@ -64,7 +68,7 @@ html.sr .widget {
 body {
   width: 100%;
   background-color: var(--soft-lavender);
-  font-family: 'nunito';
+  font-family: "nunito";
 }
 
 a {
@@ -72,27 +76,18 @@ a {
 }
 
 h1 {
-  color: var(--dark-lavender)
+  color: var(--dark-lavender);
 }
 
-
-
-h2 {
-  font-size: var(--semi-large);
-}
-
-@media(min-width: 600px){
-
+@media (min-width: 600px) {
   h2 {
     font-size: var(--semi-large-fs);
   }
-  }
-
+}
 
 a:focus-visible {
   outline: 2px solid rgb(82, 82, 214);
 }
-
 
 .radial-gradient {
   background: var(--radial-gradient);
@@ -100,7 +95,6 @@ a:focus-visible {
 
 /*==================STYLING FOR NAVIGATION============================*/
 /*================== HEADER STYLES ============================*/
-
 
 header {
   position: sticky;
@@ -344,7 +338,6 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   color: white;
 }
 
-
 /*==================STYLING FOR HERO SECTION============================*/
 .hero-section {
   display: flex;
@@ -418,6 +411,7 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
 }
 
 .hero-section .technologies h2 {
+  color: var(--dark-lavender);
   font-size: var(--semi-large-fs);
   margin: var(--medium-spacing) 0;
 }
@@ -524,13 +518,15 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   animation: floatUpDown 1s ease-in-out infinite;
 }
 
+/*==========STYLING FOR MY SERVICES SECTION ============*/
+
 .services {
   color: var(--soft-white);
+  background-color: var(--dark-lavender);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-lavender);
   margin: var(--large-spacing);
   padding: var(--large-spacing);
 }
@@ -548,9 +544,10 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   gap: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .services .grid-cards {
     flex-direction: column;
+    gap: var(--large-spacing);
   }
 }
 
@@ -576,9 +573,6 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   margin: var(--medium-spacing) 0;
 }
 
-
-
-
 /*==========STYLING FOR PORTFOLIO SECTION ============*/
 
 .portfolio-section {
@@ -586,6 +580,7 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--large-spacing);
   padding: var(--large-spacing) 0;
   background-color: var(--mid-black);
   border: 1px solid var(--soft-white);
@@ -597,7 +592,6 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   }
 
   .portfolio-section h2 {
-   
     margin: var(--large-spacing) 0;
     text-align: center;
   }
@@ -613,16 +607,32 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
 }
 
 /*---------- portfolio case study styles---------- */
+.portfolio-section .case-study {
+  display: flex;
+  flex-direction: column;
+  gap: var(--large-spacing);
+  margin: var(--large-spacing) var(--large-spacing);
+
+  border: 1px solid var(--soft-lavender);
+}
+
+@media (min-width: 600px) {
+  .portfolio-section .case-study {
+    display: flex;
+    /* background-color: #9fa6fa; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .portfolio-section .case-study {
-  margin: var(--large-spacing) var(--large-spacing);
-  padding: var(--large-spacing) 0;
-  border: 1px solid var(--soft-lavender);
+  border: 1px solid var(--softer-white);
 }
 
 @media (max-width: 500px) {
   .portfolio-section .case-study {
-    padding: 0;
+    margin: 0 var(--small-spacing);
   }
 }
 
@@ -631,44 +641,30 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   height: 300px;
 }
 
-.portfolio-section .case-study {
-  border: 1px solid var(--softer-white);
-}
-
-.portfolio-section .case-study,
-.case-study__card {
+.portfolio-section .case-study .case-study__text {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: var(--medium-spacing);
-}
-
-.portfolio-section .case-study .case-study__card {
-  width: 80%;
+  padding: var(--small-spacing);
+  width: 100%;
 }
 
 @media (min-width: 600px) {
-  .portfolio-section .case-study {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .portfolio-section .case-study .case-study__card {
-    width: 40%;
+  .portfolio-section .case-study .case-study__text {
+    width: 50%;
   }
 }
 
-.portfolio-section .case-study .case-study__card a {
+.portfolio-section .case-study .case-study__text a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: underline;
+  gap: var(--small-spacing);
   color: white;
 }
-
-.portfolio-section .case-study .case-study__card p {
-  text-align: center;
-}
-
-
 
 /*======FOOTER STYLES ========*/
 
@@ -749,7 +745,6 @@ footer .attributions {
   text-align: center;
 }
 footer .attributions a {
-  
   color: var(--soft-white);
 }
 
