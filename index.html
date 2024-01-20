@@ -19,17 +19,16 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
     <!--================== navigation.css =======-->
-    <link rel="stylesheet" href="./css/navigation.css" />
+    <!-- <link rel="stylesheet" href="./css/navigation.css" /> -->
 
     <!--================== heroSection.css =======-->
-    <link rel="stylesheet" href="./css/heroSection.css" />
-    <link rel="stylesheet" href="./css/services.css" />
+    <!-- <link rel="stylesheet" href="./css/heroSection.css" />
+    <link rel="stylesheet" href="./css/services.css" /> -->
     <!--================== portfolioSection.css =======-->
-
-    <link rel="stylesheet" href="./css/portfolioSection.css" />
+<!-- 
+    <link rel="stylesheet" href="./css/portfolioSection.css" /> -->
     <!--================== footer.css =======-->
 
-    <link rel="stylesheet" href="./css/footer.css" />
 
     <!--================== navigation.js =======-->
     <script src="./js/navigation.js"></script>
@@ -126,7 +125,7 @@
             >DOWNLOAD CV</a
           >
         </div>
-        <img
+        <img class="floating-arrow"
           src="./assets/img/icons8-down-arrow-ios-16-glyph/icons8-down-arrow-60.png"
           alt="an arrow point downwards"
         />
@@ -181,14 +180,14 @@
         </div>
       </section>
 
-      <!--==================PORTFOLIO SECTION ============================-->
+      <!--============PORTFOLIO SECTION ======================-->
 
       <section id="portfolio-section" class="portfolio-section">
         <h2 class="tagline">PROJECT SHOWCASE</h2>
 
         <article class="case-study punchline">
           <figure>
-            <a href="#">
+            <a href="./pages/project1.html">
               <img
                 class="widget"
                 src="https://picsum.photos/300/300"
@@ -196,8 +195,8 @@
               />
             </a>
           </figure>
-          <div class="case-study-desc tagline">
-            <h2>Name of project</h2>
+          <div class="case-study__card tagline">
+            <h3>Name of project</h3>
             <a href="#" target="_blank" rel="noopener noreferrer"
               >projectlink.com</a
             >
@@ -206,7 +205,7 @@
               alias ipsa quo officia, distinctio explicabo natus esse doloribus
               voluptatum.
             </p>
-            <div class="case-study-links">
+            <div class="case-study__github-link">
               <a aria-label="visit github page" href="#" target="_blank">
                 <svg
                   xmlnsXlink="http://www.w3.org/2000/svg"
@@ -229,7 +228,7 @@
 
         <article class="case-study punchline">
           <figure>
-            <a href="#">
+            <a href="./pages/project2.html">
               <img
                 class="widget"
                 src="https://picsum.photos/300/300"
@@ -237,8 +236,8 @@
               />
             </a>
           </figure>
-          <div class="case-study-desc tagline">
-            <h2>Name of project</h2>
+          <div class="case-study__card tagline">
+            <h3>Name of project</h3>
             <a href="#" target="_blank" rel="noopener noreferrer"
               >projectlink.com</a
             >
@@ -247,7 +246,7 @@
               alias ipsa quo officia, distinctio explicabo natus esse doloribus
               voluptatum.
             </p>
-            <div class="case-study-links">
+            <div class="case-study__github-link">
               <a aria-label="visit github page" href="#" target="_blank">
                 <svg
                   xmlnsXlink="http://www.w3.org/2000/svg"
@@ -269,7 +268,7 @@
         </article>
         <article class="case-study punchline">
           <figure>
-            <a href="#">
+            <a href="./pages/project3.html">
               <img
                 class="widget"
                 src="https://picsum.photos/300/300"
@@ -277,8 +276,8 @@
               />
             </a>
           </figure>
-          <div class="case-study-desc tagline">
-            <h2>Name of project</h2>
+          <div class="case-study__card tagline">
+            <h3>Name of project</h3>
             <a href="#" target="_blank" rel="noopener noreferrer"
               >projectlink.com</a
             >
@@ -287,7 +286,7 @@
               alias ipsa quo officia, distinctio explicabo natus esse doloribus
               voluptatum.
             </p>
-            <div class="case-study-links">
+            <div class="case-study__github-link">
               <a aria-label="visit github page" href="#" target="_blank">
                 <svg
                   xmlnsXlink="http://www.w3.org/2000/svg"
@@ -308,7 +307,7 @@
           </div>
         </article>
       </section>
-      <!--==================PORTFOLIO SECTION ENDS ============================-->
+      <!--=========PORTFOLIO SECTION ENDS ==================-->
     </main>
     <!--==================FOOTER ============================-->
 
@@ -319,9 +318,9 @@
         </div>
         <nav class="footer-nav tagline">
           <ul class="footer-menu-list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
         <div class="contact-info widget">
@@ -337,17 +336,15 @@
       </div>
 
       <p class="credits">Made by The Builder.</p>
+       
+      <div class="attributions">
+        <a target="_blank" href="https://icons8.com/icon/102698/instagram-check-mark">Icons by</a> <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
+   
     </footer>
     <!--==================FOOTER ENDS============================-->
 
-    <!--==================SCROLL REVEAL LIBRARY SCRIPT============================-->
-
-    <script>
-      ScrollReveal({ reset: true });
-      ScrollReveal().reveal(".headline", { duration: 500 });
-      ScrollReveal().reveal(".punchline", { delay: 600 });
-      ScrollReveal().reveal(".tagline", { delay: 700 });
-      ScrollReveal().reveal(".widget", { interval: 800 });
-    </script>
+    <!--=========SCROLL REVEAL LIBRARY SCRIPT=======================-->
+    <script src="./js/animation.js"></script>
   </body>
 </html>
