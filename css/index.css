@@ -21,10 +21,10 @@ img {
 
   /*==================SPACING ============================*/
 
-  --extra-large-spacing: 120px;
-  --large-spacing: 50px;
-  --medium-spacing: 20px;
-  --small-spacing: 10px;
+  --extra-large-spacing: 7.5rem; /*120px*/
+  --large-spacing: 3.125rem; /*50px*/
+  --medium-spacing: 1.25rem; /*20px*/
+  --small-spacing: 0.625rem; /*10px*/
 
   /*==================COLORS============================*/
 
@@ -47,8 +47,8 @@ img {
 /*==================GENERAL STYLES ============================*/
 
 @font-face {
-  font-family: "nunito";
-  src: url("/assets/fonts/Nunito-VariableFont_wght.ttf");
+  font-family: 'nunito';
+  src: url('/assets/fonts/Nunito-VariableFont_wght.ttf');
 }
 
 html {
@@ -68,7 +68,7 @@ html.sr .widget {
 body {
   width: 100%;
   background-color: var(--soft-lavender);
-  font-family: "nunito";
+  font-family: 'nunito';
 }
 
 a {
