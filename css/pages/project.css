@@ -1,7 +1,7 @@
 .project_section {
-  /* background-color: var(--soft-white); */
+  background-color: var(--soft-white);
+  border: 1px solid var(--softer-white);
   margin: var(--large-spacing);
-
   padding: var(--large-spacing);
   display: grid;
   place-items: center;
@@ -29,7 +29,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0.9rem;
-  grid-row-gap: 0px;
+  grid-row-gap: var(--medium-spacing);
 
   margin: var(--large-spacing) 0;
 }
@@ -64,4 +64,18 @@
 
 .project_section h2 {
   text-align: left;
+}
+
+.project_section .grid_1 {
+  padding: var(--small-spacing);
+  color: var(--soft-white);
+  background-color: var(--dark-lavender);
+  border-radius: 12px;
+}
+
+.project_section .stretched_grid{
+  padding: var(--small-spacing);
+  background-color: var(--soft-lavender);
+  border-radius: 12px;
+
 }

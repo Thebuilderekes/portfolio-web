@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navToggleButton = document.querySelector(".nav-toggle");
-  const navMenu = document.querySelector(".mobile-menu-list");
+  const navMenu = document.querySelector(".header__nav-mobile__menu-list");
   navToggleButton.addEventListener("click", () => {
     navMenu.classList.toggle("toggle-visibility");
     navToggleButton.setAttribute(

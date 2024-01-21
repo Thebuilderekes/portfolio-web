@@ -20,6 +20,7 @@ This website is intended for use as a web developer portfolio website and the se
 ## Features
 
 - Pages include: index.html, Project1.html, Project2,html, Project3.html
+- click/tap on each image of the project showcase section and navigate to their individual case study pages.
 - Responsive to desktop and mobile
 - Animations done with scroll reveal library
 
@@ -51,7 +52,7 @@ npm start or use live Server on visual studio code
 
 ## Usage
 
-- In the portfolio section of the home Page, you can click/tap on each image of the portfolios and navigate to their individual case study pages.
+
   screenshot here GIF or snapshot to be included
 
 To be updated:
@@ -70,5 +71,5 @@ Check the `LICENCE.md` file for license instructions
 ## Contact
 
 You may contact me at ekeoreberedugo1@gmail.com for feedback <br>
-
+[Linkedin](https://www.linkedin.com/in/ekeopre-beredugo-204580111/)
 [Twitter](https://twitter.com/iamthebuilder__)

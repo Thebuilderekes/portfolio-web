@@ -23,13 +23,13 @@
   </head>
   <body>
     <header>
-      <div class="nav-container">
+      <div class="header__nav-container">
         <div>
           <a class="logo" href="/">Jonathan</a>
         </div>
         <!--==================DESKTOP NAVIGATION============================-->
-        <nav class="desktop-nav">
-          <ul id="desktop-menu-list">
+        <nav class="header__nav-desktop">
+          <ul id="header__nav-desktop__menu-list">
             <li><a href="#" rel="noopener noreferrer">Home</a></li>
             <li><a href="#" rel="noopener noreferrer">About</a></li>
             <li><a href="#footer" rel="noopener noreferrer">Contact</a></li>
@@ -39,10 +39,10 @@
           </ul>
 
           <button
-            id="menu-toggle"
+            id="header__nav-menu-toggle__btn"
             aria-label="Toggle navigation menu"
             class="nav-toggle"
-            aria-controls="mobile-nav"
+            aria-controls="header__nav--mobile"
           >
             <span></span>
             <span></span>
@@ -53,12 +53,12 @@
       <!--================== DESKTOP NAVIGATION ENDS ============================-->
 
       <!--================== MOBILE NAVIGATION ============================-->
-      <nav class="mobile-nav" id="mobile-nav" aria-labelledby="menu-toggle">
-        <ul class="mobile-menu-list">
+      <nav class="header__nav--mobile" id="header__nav--mobile" aria-labelledby="header__nav-menu-toggle__btn">
+        <ul class="header__nav-mobile__menu-list">
           <li><a href="#" rel="noopener noreferrer">Home</a></li>
           <li><a href="#" rel="noopener noreferrer">About</a></li>
           <li><a href="#footer" rel="noopener noreferrer">Contact</a></li>
-          <li class="hire-me-mobile">
+          <li class="hire-me__list-item">
             <a href="#" rel="noopener noreferrer">Hire me</a>
           </li>
         </ul>
@@ -103,7 +103,7 @@
         </article>
 
         <div class="work-cv-links widget">
-          <a class="work" href="#portfolio-section">VIEW PROJECTS</a>
+          <a class="work" href="#project-showcase-section">VIEW PROJECTS</a>
 
           <a
             class="download-cv"
@@ -120,7 +120,7 @@
         />
       </section>
       <!--==================HERO SECTION ENDS ============================-->
-      <section class="services">
+      <section class="services-section">
         <h2 class="tagline">MY SERVICES</h2>
 
         <div class="grid-cards">
@@ -171,7 +171,7 @@
 
       <!--============PORTFOLIO SECTION ======================-->
 
-      <section id="portfolio-section" class="portfolio-section">
+      <section id="project-showcase-section" class="project-showcase-section">
         <h2 class="tagline">PROJECT SHOWCASE</h2>
 
         <article class="case-study punchline">
@@ -196,7 +196,8 @@
               elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
               esse doloribus voluptatum.
             </p>
-            <div class="case-study__github-link">
+            <div class="case-study__text-links">
+              <a href="./pages/project1.html"><img class="case-study-icon" src="./assets/img/icons8-case-study-ios-17/icons8-case-study-30.png" alt=""><span>Case study</span></a>
               <a aria-label="visit github page" href="#" target="_blank">
                 <svg
                   xmlnsXlink="http://www.w3.org/2000/svg"
@@ -240,7 +241,8 @@
               elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
               esse doloribus voluptatum.
             </p>
-            <div class="case-study__github-link">
+            <div class="case-study__text-links">
+              <a href="./pages/project2.html"><img class="case-study-icon" src="./assets/img/icons8-case-study-ios-17/icons8-case-study-30.png" alt=""><span>Case study</span></a>
               <a aria-label="visit github page" href="#" target="_blank">
                 <svg
                   xmlnsXlink="http://www.w3.org/2000/svg"
@@ -283,7 +285,8 @@
               elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
               esse doloribus voluptatum.
             </p>
-            <div class="case-study__github-link">
+            <div class="case-study__text-links">
+              <a href="./pages/project3.html"><img class="case-study-icon" src="./assets/img/icons8-case-study-ios-17/icons8-case-study-30.png" alt=""><span>Case study</span></a>
               <a aria-label="visit github page" href="#" target="_blank">
                 <svg
                   xmlnsXlink="http://www.w3.org/2000/svg"
@@ -340,7 +343,7 @@
         >
         <a target="_blank" href="https://icons8.com">Icons8</a>
       </div>
-      <p class="credits">Made by The Builder.</p>
+      <p class="credits">Made by <a href="https://www.linkedin.com/in/ekeopre-beredugo-204580111/" target="_blank">The Builder.</a></p>
 
    
     </footer>

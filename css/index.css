@@ -106,7 +106,7 @@ header {
   z-index: 99;
 }
 
-header .nav-container {
+header .header__nav-container {
   background-color: var(--soft-white);
   height: 70px;
   display: flex;
@@ -115,12 +115,12 @@ header .nav-container {
 }
 
 @media (min-width: 600px) {
-  header .nav-container {
+  header .header__nav-container {
     padding: var(--medium-spacing) var(--large-spacing);
   }
 }
 
-header .nav-container .logo {
+header .header__nav-container .logo {
   text-decoration: none;
   color: var(--mid-black);
   font-weight: 800;
@@ -207,19 +207,19 @@ nav .nav-toggle.open span:nth-child(3) {
   transform: rotate(-135deg);
 }
 
-nav #desktop-menu-list {
+nav #header__nav-desktop__menu-list {
   display: none;
 }
 
 @media (min-width: 600px) {
-  nav #desktop-menu-list {
+  nav #header__nav-desktop__menu-list {
     display: flex;
     align-items: center;
     padding: 0 var(--small-spacing);
   }
 }
 
-nav #desktop-menu-list li {
+nav #header__nav-desktop__menu-list li {
   text-transform: uppercase;
   padding: var(--small-spacing);
   margin: 0 var(--small-spacing);
@@ -227,7 +227,7 @@ nav #desktop-menu-list li {
   float: left;
 }
 
-nav #desktop-menu-list li a {
+nav #header__nav-desktop__menu-list li a {
   text-decoration: none;
   font-size: var(--desktop-fs);
   color: var(--mid-black);
@@ -235,11 +235,11 @@ nav #desktop-menu-list li a {
   display: inline-block;
 }
 
-nav #desktop-menu-list li a:hover {
+nav #header__nav-desktop__menu-list li a:hover {
   color: var(--dark-lavender);
 }
 
-nav #desktop-menu-list .hire-me-desktop a {
+nav #header__nav-desktop__menu-list .hire-me-desktop a {
   background-color: var(--soft-lavender);
   border: 1px solid black;
   padding: var(--small-spacing) var(--medium-spacing);
@@ -249,7 +249,7 @@ nav #desktop-menu-list .hire-me-desktop a {
   font-weight: 900;
 }
 
-nav #desktop-menu-list .hire-me-desktop a:hover {
+nav #header__nav-desktop__menu-list .hire-me-desktop a:hover {
   background-color: var(--dark-lavender);
   color: white;
   font-weight: 900;
@@ -277,7 +277,7 @@ nav #desktop-menu-list .hire-me-desktop a:hover {
   }
 }
 
-nav .mobile-menu-list {
+nav .header__nav-mobile__menu-list {
   position: sticky;
   display: none;
   padding: var(--medium-spacing);
@@ -287,44 +287,44 @@ nav .mobile-menu-list {
   animation-duration: 5s;
   width: 100%;
 }
-nav .mobile-menu-list.toggle-visibility {
+nav .header__nav-mobile__menu-list.toggle-visibility {
   background-color: var(--soft-white);
   display: block;
   animation: fadeIn 1s ease;
 }
 
-nav .mobile-menu-list li {
+nav .header__nav-mobile__menu-list li {
   text-transform: capitalize;
   margin: var(--medium-spacing) 0;
   opacity: 0;
   animation: fade-in-left 0.2s ease-in-out forwards;
 }
 
-nav .mobile-menu-list li:not(:last-child) {
+nav .header__nav-mobile__menu-list li:not(:last-child) {
   border-bottom: 1px solid gray;
 }
 
-nav .mobile-menu-list li:nth-child(1) {
+nav .header__nav-mobile__menu-list li:nth-child(1) {
   animation-delay: 0.25s;
 }
-nav .mobile-menu-list li:nth-child(2) {
+nav .header__nav-mobile__menu-list li:nth-child(2) {
   animation-delay: 0.35s;
 }
-nav .mobile-menu-list li:nth-child(3) {
+nav .header__nav-mobile__menu-list li:nth-child(3) {
   animation-delay: 0.45s;
 }
 
-nav .mobile-menu-list li a {
+nav .header__nav-mobile__menu-list li a {
   font-weight: 800;
   text-decoration: none;
   color: var(--mid-black);
 }
 
-nav .mobile-menu-list li a:hover {
+nav .header__nav-mobile__menu-list li a:hover {
   color: var(--dark-lavender);
 }
 
-nav .mobile-menu-list .hire-me-mobile a {
+nav .header__nav-mobile__menu-list .hire-me__list-item a {
   background-color: var(--soft-lavender);
   border: 1px solid black;
   padding: var(--small-spacing) var(--medium-spacing);
@@ -333,7 +333,7 @@ nav .mobile-menu-list .hire-me-mobile a {
   padding: 10px 15px;
 }
 
-nav .mobile-menu-list .hire-me-mobile a:hover {
+nav .header__nav-mobile__menu-list .hire-me__list-item a:hover {
   background-color: var(--dark-lavender);
   color: white;
 }
@@ -520,7 +520,7 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
 
 /*==========STYLING FOR MY SERVICES SECTION ============*/
 
-.services {
+.services-section {
   color: var(--soft-white);
   background-color: var(--dark-lavender);
   display: flex;
@@ -532,20 +532,20 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
 }
 
 @media (max-width: 500px) {
-  .services {
+  .services-section {
     margin: var(--large-spacing) var(--medium-spacing);
     padding: var(--large-spacing) var(--small-spacing);
   }
 }
 
-.services .grid-cards {
+.services-section .grid-cards {
   display: flex;
   margin: var(--large-spacing) 0;
   gap: 1rem;
 }
 
 @media (max-width: 900px) {
-  .services .grid-cards {
+  .services-section .grid-cards {
     flex-direction: column;
     gap: var(--large-spacing);
   }
@@ -568,14 +568,14 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   }
 }
 
-.services h3 {
+.services-section h3 {
   text-align: center;
   margin: var(--medium-spacing) 0;
 }
 
 /*==========STYLING FOR PORTFOLIO SECTION ============*/
 
-.portfolio-section {
+.project-showcase-section {
   color: white;
   display: flex;
   flex-direction: column;
@@ -587,27 +587,27 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
 }
 
 @media (min-width: 600px) {
-  .portfolio-section {
+  .project-showcase-section {
     margin: var(--extra-large-spacing) var(--large-spacing);
   }
 
-  .portfolio-section h2 {
+  .project-showcase-section h2 {
     margin: var(--large-spacing) 0;
     text-align: center;
   }
 }
 
 @media (max-width: 500px) {
-  .portfolio-section {
+  .project-showcase-section {
     margin: 0 var(--medium-spacing);
   }
-  .portfolio-section h2 {
+  .project-showcase-section h2 {
     font-size: var(--medium-fs);
   }
 }
 
 /*---------- portfolio case study styles---------- */
-.portfolio-section .case-study {
+.project-showcase-section .case-study {
   display: flex;
   flex-direction: column;
   gap: var(--large-spacing);
@@ -617,7 +617,7 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
 }
 
 @media (min-width: 600px) {
-  .portfolio-section .case-study {
+  .project-showcase-section .case-study {
     display: flex;
     /* background-color: #9fa6fa; */
     flex-direction: row;
@@ -626,22 +626,22 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   }
 }
 
-.portfolio-section .case-study {
+.project-showcase-section .case-study {
   border: 1px solid var(--softer-white);
 }
 
 @media (max-width: 500px) {
-  .portfolio-section .case-study {
+  .project-showcase-section .case-study {
     margin: 0 var(--small-spacing);
   }
 }
 
-.portfolio-section img {
+.project-showcase-section img {
   width: 300px;
   height: 300px;
 }
 
-.portfolio-section .case-study .case-study__text {
+.project-showcase-section .case-study .case-study__text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -651,13 +651,22 @@ nav .mobile-menu-list .hire-me-mobile a:hover {
   width: 100%;
 }
 
+.project-showcase-section .case-study__text-links {
+  display: flex;
+  gap: 20px;
+}
+.project-showcase-section .case-study__text-links .case-study-icon {
+  width:30px;
+  height:30px;
+}
+
 @media (min-width: 600px) {
-  .portfolio-section .case-study .case-study__text {
+  .project-showcase-section .case-study .case-study__text {
     width: 50%;
   }
 }
 
-.portfolio-section .case-study .case-study__text a {
+.project-showcase-section .case-study .case-study__text a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -738,6 +747,10 @@ footer p {
   padding-bottom: var(--small-spacing);
   text-align: center;
   color: var(--lavender);
+}
+footer p a {
+  color: var(--soft-white);
+  text-decoration: underline;
 }
 
 footer .attributions {
